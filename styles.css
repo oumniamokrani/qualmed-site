@@ -39,8 +39,8 @@ section.block{padding:96px 0}
 
 /* header */
 header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-.brand img{height:48px;width:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;height:124px}
+.brand img{height:112px;width:auto;display:block}
 .nav-links{display:flex;gap:26px;align-items:center}
 .nav-links>a,.has-sub>span{font-size:.92rem;color:var(--ink);font-weight:500;cursor:pointer;transition:color .2s;display:inline-flex;align-items:center;gap:4px}
 .nav-links>a:hover,.has-sub:hover>span{color:var(--turq)}
@@ -90,6 +90,10 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.92);backdr
 .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(18,52,91,.09);border-color:var(--turq)}
 .card .ico{width:48px;height:48px;border-radius:10px;background:var(--turq-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .card .ico svg{width:24px;height:24px;stroke:var(--turq);fill:none;stroke-width:1.6}
+.card.illus-card{padding:0;overflow:hidden}
+.card.illus-card .illus{display:block;width:100%;height:120px;object-fit:cover}
+.card.illus-card .card-body{padding:24px 26px 28px}
+.card.illus-card h3{margin-top:4px}
 .card h3{font-family:'Inter',sans-serif;font-weight:700;font-size:1.12rem;margin-bottom:9px;color:var(--navy)}
 .card p{color:var(--slate);font-size:.94rem}
 .card .more{display:inline-block;margin-top:16px;font-size:.86rem;font-weight:600;color:var(--turq)}
@@ -181,7 +185,8 @@ form{display:grid;gap:16px}
 /* footer */
 footer{background:var(--navy-deep);color:#fff;padding:60px 0 28px}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
-.foot-brand img{height:46px;margin-bottom:15px}
+.foot-brand img{height:58px;margin-bottom:15px}
+.foot-brand img.foot-logo{height:84px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
 .foot-brand p{color:#9fb6c4;font-size:.9rem;max-width:300px}
 .foot-sig{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.12em;color:var(--turq-light);margin-top:14px}
 .foot-col h5{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--turq-light);margin-bottom:15px;font-family:'IBM Plex Mono',monospace;font-weight:500}
@@ -224,7 +229,7 @@ footer{background:var(--navy-deep);color:#fff;padding:60px 0 28px}
 
 /* responsive */
 @media(max-width:1000px){
-  .nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:18px 28px;gap:6px;border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(18,52,91,.1)}
+  .nav-links{display:none;position:absolute;top:124px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:18px 28px;gap:6px;border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(18,52,91,.1)}
   .nav-links.open{display:flex}
   .burger{display:flex}
   .has-sub .submenu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;border-left:2px solid var(--turq-soft);border-radius:0;margin:4px 0 8px 10px;padding:0 0 0 8px;min-width:0}
