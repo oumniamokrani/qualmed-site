@@ -52,7 +52,7 @@
         <span class="eyebrow" data-fr="Contact" data-en="Contact">Contact</span>
         <h2 data-fr="Demandez un devis ou un diagnostic." data-en="Request a quote or a diagnosis.">Demandez un devis ou un diagnostic.</h2>
         <p data-fr="Chaque demande reçoit une première lecture sous 48 heures ouvrées. Missions en France et à l'international." data-en="Every request gets an initial read within two business days. Assignments in France and internationally.">Chaque demande reçoit une première lecture sous 48 heures ouvrées. Missions en France et à l'international.</p>
-        <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg><a href="mailto:contact@qualmed.fr">contact@qualmed.fr</a></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg><a href="mailto:omokrani@qualmed.fr">omokrani@qualmed.fr</a></div>
         <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-fr="Paris, France" data-en="Paris, France">Paris, France</span></div>
         <div class="contact-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg><span data-fr="France · Europe · International" data-en="France · Europe · International">France · Europe · International</span></div>
       </div>
@@ -139,12 +139,12 @@
           f.reset();
         } else {
           msg.className='form-msg err';
-          msg.textContent = l==='en' ? 'Sending failed. Please email us directly at contact@qualmed.fr.' : "L'envoi a échoué. Merci de nous écrire directement à contact@qualmed.fr.";
+          msg.textContent = l==='en' ? 'Sending failed. Please email us directly at omokrani@qualmed.fr.' : "L'envoi a échoué. Merci de nous écrire directement à omokrani@qualmed.fr.";
         }
       })
       .catch(function(){
         msg.className='form-msg err';
-        msg.textContent = l==='en' ? 'Sending failed. Please email us directly at contact@qualmed.fr.' : "L'envoi a échoué. Merci de nous écrire directement à contact@qualmed.fr.";
+        msg.textContent = l==='en' ? 'Sending failed. Please email us directly at omokrani@qualmed.fr.' : "L'envoi a échoué. Merci de nous écrire directement à omokrani@qualmed.fr.";
       })
       .finally(function(){ btn.disabled=false; msg.scrollIntoView({behavior:'smooth',block:'center'}); });
   });
@@ -175,7 +175,7 @@
       </div>
       <div class="foot-col">
         <h5 data-fr="Contact" data-en="Contact">Contact</h5>
-        <a href="mailto:contact@qualmed.fr">contact@qualmed.fr</a>
+        <a href="mailto:omokrani@qualmed.fr">omokrani@qualmed.fr</a>
         <a href="#" data-fr="Paris, France" data-en="Paris, France">Paris, France</a>
         <a href="contact.html" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
       </div>
@@ -186,6 +186,7 @@
     </div>
   </div>
 </footer>
+<div class="float-cta"><a class="a1" href="contact.html" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a><a class="a2" href="mailto:omokrani@qualmed.fr" data-fr="Nous écrire" data-en="Contact us">Nous écrire</a></div>
 <button class="to-top" aria-label="Haut de page">↑</button>
 <script src="app.js"></script>
 </body>

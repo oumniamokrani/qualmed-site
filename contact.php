@@ -1,12 +1,12 @@
 <?php
 /* QUALMED — traitement du formulaire de contact.
-   Envoie la demande à contact@qualmed.fr. Renvoie du JSON honnête :
+   Envoie la demande à omokrani@qualmed.fr. Renvoie du JSON honnête :
    { "ok": true } seulement si l'email part réellement. */
 
 header('Content-Type: application/json; charset=utf-8');
 
 // --- Destinataire ---
-$TO = 'contact@qualmed.fr';
+$TO = 'omokrani@qualmed.fr';
 
 // --- Méthode POST uniquement ---
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
