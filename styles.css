@@ -66,7 +66,14 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.92);backdr
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--navy) 10%,rgba(18,52,91,.82) 42%,rgba(13,39,68,.35) 100%)}
 .hero-grid-pat{position:absolute;inset:0;opacity:.05;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:60px 60px}
 .hero .wrap{position:relative;z-index:3;padding:118px 28px 104px}
-.hero-inner{max-width:780px}
+.hero-2col{display:grid;grid-template-columns:1.25fr .85fr;gap:48px;align-items:center}
+.hero-inner{max-width:720px}
+.hero-visual{display:flex;justify-content:center;align-items:center}
+.hero-logo-card{background:rgba(255,255,255,.97);border-radius:20px;padding:40px 36px 30px;box-shadow:0 24px 60px rgba(0,0,0,.3);text-align:center;max-width:340px;width:100%}
+.hero-logo-card img{width:230px;max-width:80%;margin:0 auto 20px}
+.hlc-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;border-top:1px solid var(--line);padding-top:20px}
+.hlc-tags span{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.04em;color:var(--navy);background:var(--turq-soft);padding:6px 12px;border-radius:20px;font-weight:500}
+@media(max-width:900px){.hero-2col{grid-template-columns:1fr;gap:36px}.hero-visual{order:-1}.hero-logo-card{max-width:300px}}
 .hero .eyebrow{color:var(--turq-light)}
 .hero h1{color:#fff;font-size:clamp(2.4rem,5vw,3.9rem);margin:22px 0 24px;letter-spacing:-.025em}
 .hero p.lead{font-size:1.18rem;color:#cfe0ea;max-width:620px}
@@ -205,10 +212,10 @@ footer{background:var(--navy-deep);color:#fff;padding:60px 0 28px}
 .stat .l{font-size:.9rem;color:#cbdae6;margin-top:8px}
 
 /* ---------- bande photo sectorielle ---------- */
-.photoband{position:relative;min-height:360px;display:flex;align-items:center;color:#fff;overflow:hidden;border-radius:0}
+.photoband{position:relative;min-height:220px;display:flex;align-items:center;color:#fff;overflow:hidden;border-radius:0}
 .photoband .bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
 .photoband .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,52,91,.9) 0%,rgba(18,52,91,.6) 55%,rgba(13,39,68,.25) 100%);z-index:1}
-.photoband .wrap{position:relative;z-index:2;padding:62px 28px}
+.photoband .wrap{position:relative;z-index:2;padding:42px 28px}
 .photoband .ph-txt{max-width:580px}
 .photoband h2{color:#fff}
 .photoband p{color:#dceaf2;font-size:1.08rem}
