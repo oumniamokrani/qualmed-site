@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.v8.css">
+<link rel="stylesheet" href="styles.v9.css">
 </head>
 <body>
 <header>
@@ -57,7 +57,7 @@
         <div class="contact-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg><span data-fr="France · Europe · International" data-en="France · Europe · International">France · Europe · International</span></div>
       </div>
       <div class="reveal">
-        <form id="qmform" method="post" action="https://formsubmit.co/ajax/omokrani@qualmed.fr" novalidate>
+        <form id="qmform" method="post" action="https://formsubmit.co/omokrani@qualmed.fr">
           <div class="form-msg" id="formmsg"></div>
           <div class="row2">
             <div class="field"><label data-fr="Nom et prénom" data-en="Full name">Nom et prénom</label><span class="req">*</span><input type="text" name="name" required></div>
@@ -117,6 +117,7 @@
           <input type="hidden" name="_subject" value="[QualMed] Nouvelle demande de contact">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://lightsteelblue-barracuda-848148.hostingersite.com/merci.html">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label class="consent"><input type="checkbox" name="consent" required> <span data-fr="J'accepte que mes données soient traitées pour répondre à ma demande." data-en="I agree that my data may be processed to respond to my request.">J'accepte que mes données soient traitées pour répondre à ma demande.</span></label>
           <button type="submit" class="btn btn-navy" data-fr="Envoyer ma demande" data-en="Send my request">Envoyer ma demande</button>
@@ -141,7 +142,7 @@
     fd.delete('website');
     var btn=f.querySelector('button[type=submit]');
     btn.disabled=true;
-    fetch(f.getAttribute('action'),{method:'POST',headers:{'Accept':'application/json'},body:fd})
+    fetch('https://formsubmit.co/ajax/omokrani@qualmed.fr',{method:'POST',headers:{'Accept':'application/json'},body:fd})
       .then(function(r){return r.json().catch(function(){return {success:false};});})
       .then(function(d){
         if(d && (d.success===true || d.success==='true')){
@@ -194,6 +195,6 @@
 </footer>
 <div class="float-cta"><a class="a1" href="contact.html" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a><a class="a2" href="mailto:omokrani@qualmed.fr" data-fr="Nous écrire" data-en="Contact us">Nous écrire</a></div>
 <button class="to-top" aria-label="Haut de page">↑</button>
-<script src="app.v8.js"></script>
+<script src="app.v9.js"></script>
 </body>
 </html>
