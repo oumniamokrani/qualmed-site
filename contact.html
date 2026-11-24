@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact, devis & prise de rendez-vous | QualMed</title>
+<meta name="description" content="Demandez un devis ou un diagnostic, ou planifiez un échange avec QualMed. Réponse sous 48 heures ouvrées.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="QualMed"><img src="assets/logo.png" alt="QualMed"></a>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+      <div class="has-sub">
+        <span data-fr="Expertises" data-en="Expertise">Expertises</span>
+        <div class="submenu">
+          <a href="transformation.html"><b data-fr="Transformation des entreprises" data-en="Business transformation">Transformation des entreprises</b><span data-fr="Diagnostic 360°, réorganisation, performance" data-en="360° diagnosis, reorganisation, performance">Diagnostic 360°, réorganisation, performance</span></a>
+          <a href="qualite-certifications.html"><b data-fr="Qualité & certifications" data-en="Quality & certifications">Qualité & certifications</b><span data-fr="ISO 9001, 13485, 14001, 45001" data-en="ISO 9001, 13485, 14001, 45001">ISO 9001, 13485, 14001, 45001</span></a>
+          <a href="dispositifs-medicaux.html"><b data-fr="Dispositifs médicaux" data-en="Medical devices">Dispositifs médicaux</b><span data-fr="MDR, importateurs, fabricants, distributeurs" data-en="MDR, importers, manufacturers, distributors">MDR, importateurs, fabricants, distributeurs</span></a>
+          <a href="audits-validation.html"><b data-fr="Audits & validation" data-en="Audits & validation">Audits & validation</b><span data-fr="Audits internes, fournisseurs, CAPA, risques" data-en="Internal & supplier audits, CAPA, risks">Audits internes, fournisseurs, CAPA, risques</span></a>
+          <a href="management-qhse.html"><b data-fr="Management & formation" data-en="Management & training">Management & formation</b><span data-fr="Direction qualité externalisée, QHSE, formation" data-en="Outsourced quality, QHSE, training">Direction qualité externalisée, QHSE, formation</span></a>
+        </div>
+      </div>
+      <a href="secteurs.html" data-fr="Secteurs" data-en="Sectors">Secteurs</a>
+      <a href="a-propos.html" data-fr="À propos" data-en="About">À propos</a>
+      <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+      <div class="lang">
+        <button class="on" data-lang="fr" onclick="qmSetLang('fr')">FR</button>
+        <button data-lang="en" onclick="qmSetLang('en')">EN</button>
+      </div>
+      <a href="contact.html" class="nav-cta" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
+    </nav>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a> / <span data-fr="Contact" data-en="Contact">Contact</span></div>
+    <h1 data-fr="Parlons de votre projet." data-en="Let's talk about your project.">Parlons de votre projet.</h1>
+    <p data-fr="Décrivez votre besoin en quelques lignes. Nous revenons vers vous sous 48 heures ouvrées avec une première lecture." data-en="Describe your need in a few lines. We reply within two business days with an initial read.">Décrivez votre besoin en quelques lignes. Nous revenons vers vous sous 48 heures ouvrées avec une première lecture.</p>
+  </div>
+</section>
+<section class="block"><div class="wrap contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow" data-fr="Contact" data-en="Contact">Contact</span>
+        <h2 data-fr="Demandez un devis ou un diagnostic." data-en="Request a quote or a diagnosis.">Demandez un devis ou un diagnostic.</h2>
+        <p data-fr="Chaque demande reçoit une première lecture sous 48 heures ouvrées. Missions en France et à l'international." data-en="Every request gets an initial read within two business days. Assignments in France and internationally.">Chaque demande reçoit une première lecture sous 48 heures ouvrées. Missions en France et à l'international.</p>
+        <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg><a href="mailto:contact@qualmed.fr">contact@qualmed.fr</a></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-fr="Paris, France" data-en="Paris, France">Paris, France</span></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg><span data-fr="France · Europe · International" data-en="France · Europe · International">France · Europe · International</span></div>
+      </div>
+      <div class="reveal">
+        <form id="qmform" method="post" action="contact.php" novalidate>
+          <div class="form-msg" id="formmsg"></div>
+          <div class="row2">
+            <div class="field"><label data-fr="Nom et prénom" data-en="Full name">Nom et prénom</label><span class="req">*</span><input type="text" name="name" required></div>
+            <div class="field"><label data-fr="Entreprise" data-en="Company">Entreprise</label><input type="text" name="company"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label data-fr="Email professionnel" data-en="Business email">Email professionnel</label><span class="req">*</span><input type="email" name="email" required></div>
+            <div class="field"><label data-fr="Téléphone (facultatif)" data-en="Phone (optional)">Téléphone (facultatif)</label><input type="tel" name="phone"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label data-fr="Pays" data-en="Country">Pays</label><input type="text" name="country"></div>
+            <div class="field"><label data-fr="Taille de l'entreprise" data-en="Company size">Taille de l'entreprise</label>
+              <select name="size">
+                <option value="" data-fr="— Sélectionnez —" data-en="— Select —">— Sélectionnez —</option>
+                <option data-fr="TPE (1-9)" data-en="Micro (1-9)">TPE (1-9)</option>
+                <option data-fr="PME (10-249)" data-en="SME (10-249)">PME (10-249)</option>
+                <option data-fr="ETI (250-4999)" data-en="Mid-cap (250-4999)">ETI (250-4999)</option>
+                <option data-fr="Grande entreprise (5000+)" data-en="Large (5000+)">Grande entreprise (5000+)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field"><label data-fr="Vous êtes" data-en="You are">Vous êtes</label>
+              <select name="operator">
+                <option value="" data-fr="— Sélectionnez —" data-en="— Select —">— Sélectionnez —</option>
+                <option data-fr="Fabricant" data-en="Manufacturer">Fabricant</option>
+                <option data-fr="Distributeur" data-en="Distributor">Distributeur</option>
+                <option data-fr="Importateur" data-en="Importer">Importateur</option>
+                <option data-fr="Exportateur" data-en="Exporter">Exportateur</option>
+                <option data-fr="Centre de santé" data-en="Healthcare facility">Centre de santé</option>
+                <option data-fr="Laboratoire" data-en="Laboratory">Laboratoire</option>
+                <option data-fr="Autre" data-en="Other">Autre</option>
+              </select>
+            </div>
+            <div class="field"><label data-fr="Nature du besoin" data-en="Type of need">Nature du besoin</label>
+              <select name="need">
+                <option value="" data-fr="— Sélectionnez —" data-en="— Select —">— Sélectionnez —</option>
+                <option data-fr="Diagnostic de conformité" data-en="Compliance diagnosis">Diagnostic de conformité</option>
+                <option data-fr="Certification ISO" data-en="ISO certification">Certification ISO</option>
+                <option data-fr="Transformation / réorganisation" data-en="Transformation / reorganisation">Transformation / réorganisation</option>
+                <option data-fr="Dispositifs médicaux / MDR" data-en="Medical devices / MDR">Dispositifs médicaux / MDR</option>
+                <option data-fr="Audit" data-en="Audit">Audit</option>
+                <option data-fr="Validation" data-en="Validation">Validation</option>
+                <option data-fr="Direction qualité externalisée" data-en="Outsourced quality management">Direction qualité externalisée</option>
+                <option data-fr="Formation" data-en="Training">Formation</option>
+                <option data-fr="Autre demande" data-en="Other request">Autre demande</option>
+              </select>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field"><label data-fr="Secteur d'activité" data-en="Sector">Secteur d'activité</label><input type="text" name="sector"></div>
+            <div class="field"><label data-fr="Délai souhaité" data-en="Desired timeline">Délai souhaité</label><input type="text" name="timeline" data-fr-ph="Ex. : sous 3 mois" data-en-ph="E.g. within 3 months"></div>
+          </div>
+          <div class="field"><label data-fr="Budget indicatif (facultatif)" data-en="Indicative budget (optional)">Budget indicatif (facultatif)</label><input type="text" name="budget"></div>
+          <div class="field"><label data-fr="Description du projet" data-en="Project description">Description du projet</label><span class="req">*</span><textarea name="message" required></textarea></div>
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="consent"><input type="checkbox" name="consent" required> <span data-fr="J'accepte que mes données soient traitées pour répondre à ma demande." data-en="I agree that my data may be processed to respond to my request.">J'accepte que mes données soient traitées pour répondre à ma demande.</span></label>
+          <button type="submit" class="btn btn-navy" data-fr="Envoyer ma demande" data-en="Send my request">Envoyer ma demande</button>
+        </form>
+      </div>
+    </div></section>
+<script>
+(function(){
+  var f=document.getElementById('qmform'), msg=document.getElementById('formmsg');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var l=document.documentElement.lang;
+    msg.className='form-msg'; msg.textContent='';
+    var fd=new FormData(f);
+    var btn=f.querySelector('button[type=submit]');
+    btn.disabled=true;
+    fetch('contact.php',{method:'POST',body:fd})
+      .then(function(r){return r.json().catch(function(){return {ok:false};});})
+      .then(function(d){
+        if(d && d.ok){
+          msg.className='form-msg ok';
+          msg.textContent = l==='en' ? 'Thank you — your request has been sent. We will reply within two business days.' : 'Merci — votre demande a bien été envoyée. Nous revenons vers vous sous 48 heures ouvrées.';
+          f.reset();
+        } else {
+          msg.className='form-msg err';
+          msg.textContent = l==='en' ? 'Sending failed. Please email us directly at contact@qualmed.fr.' : "L'envoi a échoué. Merci de nous écrire directement à contact@qualmed.fr.";
+        }
+      })
+      .catch(function(){
+        msg.className='form-msg err';
+        msg.textContent = l==='en' ? 'Sending failed. Please email us directly at contact@qualmed.fr.' : "L'envoi a échoué. Merci de nous écrire directement à contact@qualmed.fr.";
+      })
+      .finally(function(){ btn.disabled=false; msg.scrollIntoView({behavior:'smooth',block:'center'}); });
+  });
+})();
+</script>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-white.png" alt="QualMed">
+        <p data-fr="Conseil en management de la qualité, conformité réglementaire, organisation et transformation des entreprises. France, Europe et international." data-en="Consulting in quality management, regulatory compliance, organisation and business transformation. France, Europe and international.">Conseil en management de la qualité, conformité réglementaire, organisation et transformation des entreprises. France, Europe et international.</p>
+        <div class="foot-sig">QUALITY · COMPLIANCE · TRANSFORMATION · PERFORMANCE</div>
+      </div>
+      <div class="foot-col">
+        <h5 data-fr="Expertises" data-en="Expertise">Expertises</h5>
+        <a href="transformation.html" data-fr="Transformation" data-en="Transformation">Transformation</a>
+        <a href="qualite-certifications.html" data-fr="Qualité & ISO" data-en="Quality & ISO">Qualité & ISO</a>
+        <a href="dispositifs-medicaux.html" data-fr="Dispositifs médicaux" data-en="Medical devices">Dispositifs médicaux</a>
+        <a href="audits-validation.html" data-fr="Audits & validation" data-en="Audits & validation">Audits & validation</a>
+        <a href="management-qhse.html" data-fr="Management & formation" data-en="Management & training">Management & formation</a>
+      </div>
+      <div class="foot-col">
+        <h5 data-fr="Société" data-en="Company">Société</h5>
+        <a href="secteurs.html" data-fr="Secteurs" data-en="Sectors">Secteurs</a>
+        <a href="a-propos.html" data-fr="À propos" data-en="About">À propos</a>
+        <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+        <a href="mentions-legales.html" data-fr="Mentions légales" data-en="Legal notice">Mentions légales</a>
+      </div>
+      <div class="foot-col">
+        <h5 data-fr="Contact" data-en="Contact">Contact</h5>
+        <a href="mailto:contact@qualmed.fr">contact@qualmed.fr</a>
+        <a href="#" data-fr="Paris, France" data-en="Paris, France">Paris, France</a>
+        <a href="contact.html" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="yr"></span> QUALMED SASU — <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+      <p data-fr="Paris, France · Missions en France et à l'international" data-en="Paris, France · Assignments in France and internationally">Paris, France · Missions en France et à l'international</p>
+    </div>
+  </div>
+</footer>
+<button class="to-top" aria-label="Haut de page">↑</button>
+<script src="assets/app.js"></script>
+</body>
+</html>

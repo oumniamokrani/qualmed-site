@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QualMed — Conseil qualité, conformité & transformation des entreprises</title>
+<meta name="description" content="Cabinet de conseil en management de la qualité, conformité réglementaire (ISO, MDR) et transformation des organisations. France, Europe et international.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="QualMed"><img src="assets/logo.png" alt="QualMed"></a>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+      <div class="has-sub">
+        <span data-fr="Expertises" data-en="Expertise">Expertises</span>
+        <div class="submenu">
+          <a href="transformation.html"><b data-fr="Transformation des entreprises" data-en="Business transformation">Transformation des entreprises</b><span data-fr="Diagnostic 360°, réorganisation, performance" data-en="360° diagnosis, reorganisation, performance">Diagnostic 360°, réorganisation, performance</span></a>
+          <a href="qualite-certifications.html"><b data-fr="Qualité & certifications" data-en="Quality & certifications">Qualité & certifications</b><span data-fr="ISO 9001, 13485, 14001, 45001" data-en="ISO 9001, 13485, 14001, 45001">ISO 9001, 13485, 14001, 45001</span></a>
+          <a href="dispositifs-medicaux.html"><b data-fr="Dispositifs médicaux" data-en="Medical devices">Dispositifs médicaux</b><span data-fr="MDR, importateurs, fabricants, distributeurs" data-en="MDR, importers, manufacturers, distributors">MDR, importateurs, fabricants, distributeurs</span></a>
+          <a href="audits-validation.html"><b data-fr="Audits & validation" data-en="Audits & validation">Audits & validation</b><span data-fr="Audits internes, fournisseurs, CAPA, risques" data-en="Internal & supplier audits, CAPA, risks">Audits internes, fournisseurs, CAPA, risques</span></a>
+          <a href="management-qhse.html"><b data-fr="Management & formation" data-en="Management & training">Management & formation</b><span data-fr="Direction qualité externalisée, QHSE, formation" data-en="Outsourced quality, QHSE, training">Direction qualité externalisée, QHSE, formation</span></a>
+        </div>
+      </div>
+      <a href="secteurs.html" data-fr="Secteurs" data-en="Sectors">Secteurs</a>
+      <a href="a-propos.html" data-fr="À propos" data-en="About">À propos</a>
+      <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+      <div class="lang">
+        <button class="on" data-lang="fr" onclick="qmSetLang('fr')">FR</button>
+        <button data-lang="en" onclick="qmSetLang('en')">EN</button>
+      </div>
+      <a href="contact.html" class="nav-cta" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
+    </nav>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid-pat"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">QUALITY · COMPLIANCE · TRANSFORMATION · PERFORMANCE</span>
+      <h1 data-fr="Transformez vos exigences en <span style='color:var(--turq-light)'>avantages concurrentiels</span>." data-en="Turn your requirements into <span style='color:var(--turq-light)'>competitive advantages</span>.">Transformez vos exigences en <span style="color:var(--turq-light)">avantages concurrentiels</span>.</h1>
+      <p class="lead" data-fr="QualMed accompagne les entreprises dans leur mise en conformité, leur structuration, leur réorganisation et l'amélioration durable de leurs performances. De la création à la transformation, nous aidons les dirigeants à maîtriser leurs risques, améliorer leurs processus et développer leur compétitivité." data-en="QualMed supports companies in their compliance, structuring, reorganisation and the lasting improvement of their performance. From creation to transformation, we help leaders control their risks, improve their processes and grow their competitiveness.">QualMed accompagne les entreprises dans leur mise en conformité, leur structuration, leur réorganisation et l'amélioration durable de leurs performances. De la création à la transformation, nous aidons les dirigeants à maîtriser leurs risques, améliorer leurs processus et développer leur compétitivité.</p>
+      <div class="hero-sub" data-fr="France · Europe · International" data-en="France · Europe · International">France · Europe · International</div>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary" data-fr="Demander un diagnostic" data-en="Request a diagnosis">Demander un diagnostic</a>
+        <a href="#expertises" class="btn btn-ghost" data-fr="Découvrir nos expertises" data-en="Explore our expertise">Découvrir nos expertises</a>
+        <a href="contact.html" class="btn btn-ghost" data-fr="Planifier un échange" data-en="Schedule a call">Planifier un échange</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Défis -->
+<section class="block chal">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-fr="Vos défis, nos solutions" data-en="Your challenges, our solutions">Vos défis, nos solutions</span>
+      <h2 data-fr="Vous vous reconnaissez dans l'une de ces situations ?" data-en="Do you recognise one of these situations?">Vous vous reconnaissez dans l'une de ces situations ?</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card clickable reveal" data-href="qualite-certifications.html"><h3 data-fr="Vous devez vous mettre en conformité." data-en="You need to become compliant.">Vous devez vous mettre en conformité.</h3><a class="more" href="qualite-certifications.html" data-fr="Découvrir la solution →" data-en="Explore the solution →">Découvrir la solution →</a></div>
+      <div class="card clickable reveal" data-href="qualite-certifications.html"><h3 data-fr="Vous préparez une certification ISO." data-en="You are preparing for ISO certification.">Vous préparez une certification ISO.</h3><a class="more" href="qualite-certifications.html" data-fr="Découvrir la solution →" data-en="Explore the solution →">Découvrir la solution →</a></div>
+      <div class="card clickable reveal" data-href="transformation.html"><h3 data-fr="Votre organisation rencontre des difficultés." data-en="Your organisation is facing difficulties.">Votre organisation rencontre des difficultés.</h3><a class="more" href="transformation.html" data-fr="Découvrir la solution →" data-en="Explore the solution →">Découvrir la solution →</a></div>
+      <div class="card clickable reveal" data-href="transformation.html"><h3 data-fr="Vous souhaitez améliorer votre performance." data-en="You want to improve your performance.">Vous souhaitez améliorer votre performance.</h3><a class="more" href="transformation.html" data-fr="Découvrir la solution →" data-en="Explore the solution →">Découvrir la solution →</a></div>
+      <div class="card clickable reveal" data-href="transformation.html"><h3 data-fr="Vous créez ou développez votre entreprise." data-en="You are creating or growing your business.">Vous créez ou développez votre entreprise.</h3><a class="more" href="transformation.html" data-fr="Découvrir la solution →" data-en="Explore the solution →">Découvrir la solution →</a></div>
+      <div class="card clickable reveal" data-href="dispositifs-medicaux.html"><h3 data-fr="Vous importez, exportez ou fabriquez des dispositifs médicaux." data-en="You import, export or manufacture medical devices.">Vous importez, exportez ou fabriquez des dispositifs médicaux.</h3><a class="more" href="dispositifs-medicaux.html" data-fr="Découvrir la solution →" data-en="Explore the solution →">Découvrir la solution →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Expertises -->
+<section class="block" id="expertises">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-fr="Nos expertises" data-en="Our expertise">Nos expertises</span>
+      <h2 data-fr="Six pôles pour accompagner votre excellence opérationnelle." data-en="Six areas to support your operational excellence.">Six pôles pour accompagner votre excellence opérationnelle.</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></div><h3 data-fr="Transformation & performance" data-en="Transformation & performance">Transformation & performance</h3><p data-fr="Réorganisation, optimisation des processus et pilotage de la performance." data-en="Reorganisation, process optimisation and performance management.">Réorganisation, optimisation des processus et pilotage de la performance.</p><a class="more" href="transformation.html" data-fr="En savoir plus →" data-en="Learn more →">En savoir plus →</a></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.5 0 2.9.37 4.15 1.02"/></svg></div><h3 data-fr="Qualité & certifications" data-en="Quality & certifications">Qualité & certifications</h3><p data-fr="ISO 9001, 13485, 14001, 45001 et systèmes intégrés QHSE." data-en="ISO 9001, 13485, 14001, 45001 and integrated QHSE systems.">ISO 9001, 13485, 14001, 45001 et systèmes intégrés QHSE.</p><a class="more" href="qualite-certifications.html" data-fr="En savoir plus →" data-en="Learn more →">En savoir plus →</a></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-fr="Dispositifs médicaux & MDR" data-en="Medical devices & MDR">Dispositifs médicaux & MDR</h3><p data-fr="Conformité réglementaire pour fabricants, importateurs et distributeurs." data-en="Regulatory compliance for manufacturers, importers and distributors.">Conformité réglementaire pour fabricants, importateurs et distributeurs.</p><a class="more" href="dispositifs-medicaux.html" data-fr="En savoir plus →" data-en="Learn more →">En savoir plus →</a></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><h3 data-fr="Audits, validation & risques" data-en="Audits, validation & risks">Audits, validation & risques</h3><p data-fr="Audits internes et fournisseurs, CAPA, gestion des risques, validation." data-en="Internal and supplier audits, CAPA, risk management, validation.">Audits internes et fournisseurs, CAPA, gestion des risques, validation.</p><a class="more" href="audits-validation.html" data-fr="En savoir plus →" data-en="Learn more →">En savoir plus →</a></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21V9l6-3v3l6-3v3l6-3v15z"/></svg></div><h3 data-fr="Management externalisé QHSE" data-en="Outsourced QHSE management">Management externalisé QHSE</h3><p data-fr="Direction qualité externalisée et management de transition." data-en="Outsourced quality management and transition management.">Direction qualité externalisée et management de transition.</p><a class="more" href="management-qhse.html" data-fr="En savoir plus →" data-en="Learn more →">En savoir plus →</a></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3L2 9l10 6 10-6z"/><path d="M6 12v5c0 1 3 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div><h3 data-fr="Formation & compétences" data-en="Training & skills">Formation & compétences</h3><p data-fr="Montée en compétence des équipes et des dirigeants." data-en="Upskilling teams and leaders.">Montée en compétence des équipes et des dirigeants.</p><a class="more" href="management-qhse.html#formation" data-fr="En savoir plus →" data-en="Learn more →">En savoir plus →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pourquoi -->
+<section class="block why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" style="color:var(--turq-light)" data-fr="Pourquoi QualMed ?" data-en="Why QualMed?">Pourquoi QualMed ?</span>
+      <h2 data-fr="Une expertise opérationnelle, un accompagnement sur mesure." data-en="Operational expertise, tailored support.">Une expertise opérationnelle, un accompagnement sur mesure.</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-item"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><span data-fr="Plus de 15 ans d'expérience en qualité et organisation." data-en="15+ years of experience in quality and organisation.">Plus de 15 ans d'expérience en qualité et organisation.</span></div>
+      <div class="why-item"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><span data-fr="Expérience de direction QHSE." data-en="QHSE management experience.">Expérience de direction QHSE.</span></div>
+      <div class="why-item"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><span data-fr="Expertise des systèmes de management de la qualité." data-en="Expertise in quality management systems.">Expertise des systèmes de management de la qualité.</span></div>
+      <div class="why-item"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><span data-fr="Expérience opérationnelle dans l'industrie et l'import-export médical." data-en="Hands-on experience in industry and medical import-export.">Expérience opérationnelle dans l'industrie et l'import-export médical.</span></div>
+      <div class="why-item"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><span data-fr="Accompagnement personnalisé, pragmatique et proche du terrain." data-en="Personalised, pragmatic, field-focused support.">Accompagnement personnalisé, pragmatique et proche du terrain.</span></div>
+      <div class="why-item"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><span data-fr="Intervention ponctuelle ou continue, en France et à l'international." data-en="One-off or ongoing engagement, in France and internationally.">Intervention ponctuelle ou continue, en France et à l'international.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Méthode -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-fr="Notre méthode" data-en="Our method">Notre méthode</span>
+      <h2 data-fr="Une démarche claire, du diagnostic à la performance durable." data-en="A clear path, from diagnosis to lasting performance.">Une démarche claire, du diagnostic à la performance durable.</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="s">01</div><h3 data-fr="Comprendre" data-en="Understand">Comprendre</h3><p data-fr="Diagnostic de la situation et des besoins." data-en="Diagnosis of the situation and needs.">Diagnostic de la situation et des besoins.</p></div>
+      <div class="step"><div class="s">02</div><h3 data-fr="Structurer" data-en="Structure">Structurer</h3><p data-fr="Analyse des risques et plan d'action." data-en="Risk analysis and action plan.">Analyse des risques et plan d'action.</p></div>
+      <div class="step"><div class="s">03</div><h3 data-fr="Transformer" data-en="Transform">Transformer</h3><p data-fr="Accompagnement opérationnel et mise en œuvre." data-en="Operational support and implementation.">Accompagnement opérationnel et mise en œuvre.</p></div>
+      <div class="step"><div class="s">04</div><h3 data-fr="Pérenniser" data-en="Sustain">Pérenniser</h3><p data-fr="Suivi des résultats, audits et amélioration continue." data-en="Results monitoring, audits and continuous improvement.">Suivi des résultats, audits et amélioration continue.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- À propos aperçu -->
+<section class="block" style="background:var(--mist)">
+  <div class="wrap contact-grid" style="align-items:center">
+    <div class="reveal">
+      <span class="eyebrow" data-fr="À propos" data-en="About">À propos</span>
+      <h2 style="font-size:clamp(1.8rem,3.4vw,2.5rem);margin:14px 0 18px" data-fr="Dirigée par Oumnia Mokrani, fondatrice et présidente." data-en="Led by Oumnia Mokrani, founder and president.">Dirigée par Oumnia Mokrani, fondatrice et présidente.</h2>
+      <p style="color:var(--slate);font-size:1.05rem;margin-bottom:22px" data-fr="Professionnelle du management qualité, des systèmes de management et de l'organisation industrielle. Sa conviction : faire de la qualité et de la conformité de véritables leviers de performance et de compétitivité." data-en="A professional in quality management, management systems and industrial organisation. Her conviction: turning quality and compliance into real levers of performance and competitiveness.">Professionnelle du management qualité, des systèmes de management et de l'organisation industrielle. Sa conviction : faire de la qualité et de la conformité de véritables leviers de performance et de compétitivité.</p>
+      <a href="a-propos.html" class="btn btn-outline" data-fr="En savoir plus" data-en="Learn more">En savoir plus</a>
+    </div>
+    <div class="reveal" style="border-radius:12px;overflow:hidden;min-height:300px;background:linear-gradient(135deg,var(--navy),#0a5566);display:flex;align-items:center;justify-content:center">
+      <img src="assets/logo-white.png" alt="QualMed" style="width:200px;opacity:.9">
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2 data-fr="Votre entreprise fait face à un défi qualité, réglementaire ou organisationnel ?" data-en="Facing a quality, regulatory or organisational challenge?">Votre entreprise fait face à un défi qualité, réglementaire ou organisationnel ?</h2>
+    <p data-fr="Échangeons sur vos enjeux et identifions les solutions adaptées à votre activité." data-en="Let's discuss your challenges and identify the solutions suited to your business.">Échangeons sur vos enjeux et identifions les solutions adaptées à votre activité.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-navy" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
+      <a href="contact.html" class="btn btn-ghost" data-fr="Planifier une consultation" data-en="Schedule a consultation">Planifier une consultation</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-white.png" alt="QualMed">
+        <p data-fr="Conseil en management de la qualité, conformité réglementaire, organisation et transformation des entreprises. France, Europe et international." data-en="Consulting in quality management, regulatory compliance, organisation and business transformation. France, Europe and international.">Conseil en management de la qualité, conformité réglementaire, organisation et transformation des entreprises. France, Europe et international.</p>
+        <div class="foot-sig">QUALITY · COMPLIANCE · TRANSFORMATION · PERFORMANCE</div>
+      </div>
+      <div class="foot-col">
+        <h5 data-fr="Expertises" data-en="Expertise">Expertises</h5>
+        <a href="transformation.html" data-fr="Transformation" data-en="Transformation">Transformation</a>
+        <a href="qualite-certifications.html" data-fr="Qualité & ISO" data-en="Quality & ISO">Qualité & ISO</a>
+        <a href="dispositifs-medicaux.html" data-fr="Dispositifs médicaux" data-en="Medical devices">Dispositifs médicaux</a>
+        <a href="audits-validation.html" data-fr="Audits & validation" data-en="Audits & validation">Audits & validation</a>
+        <a href="management-qhse.html" data-fr="Management & formation" data-en="Management & training">Management & formation</a>
+      </div>
+      <div class="foot-col">
+        <h5 data-fr="Société" data-en="Company">Société</h5>
+        <a href="secteurs.html" data-fr="Secteurs" data-en="Sectors">Secteurs</a>
+        <a href="a-propos.html" data-fr="À propos" data-en="About">À propos</a>
+        <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+        <a href="mentions-legales.html" data-fr="Mentions légales" data-en="Legal notice">Mentions légales</a>
+      </div>
+      <div class="foot-col">
+        <h5 data-fr="Contact" data-en="Contact">Contact</h5>
+        <a href="mailto:contact@qualmed.fr">contact@qualmed.fr</a>
+        <a href="#" data-fr="Paris, France" data-en="Paris, France">Paris, France</a>
+        <a href="contact.html" data-fr="Demander un devis" data-en="Request a quote">Demander un devis</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="yr"></span> QUALMED SASU — <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+      <p data-fr="Paris, France · Missions en France et à l'international" data-en="Paris, France · Assignments in France and internationally">Paris, France · Missions en France et à l'international</p>
+    </div>
+  </div>
+</footer>
+<button class="to-top" aria-label="Haut de page">↑</button>
+<script src="assets/app.js"></script>
+</body>
+</html>
