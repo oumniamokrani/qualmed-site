@@ -55,5 +55,13 @@
     document.querySelectorAll('.card.clickable[data-href]').forEach(function(c){
       c.addEventListener('click',function(){ window.location.href=c.getAttribute('data-href'); });
     });
+
+    // photos réelles : si "photo-xxx.jpg" existe, elle remplace le graphique de la bande
+    document.querySelectorAll('.photoband .bg[data-photo]').forEach(function(bg){
+      var name=bg.getAttribute('data-photo');
+      var img=new Image();
+      img.onload=function(){ bg.style.backgroundImage="url('"+name+".jpg')"; };
+      img.src=name+'.jpg';
+    });
   });
 })();
