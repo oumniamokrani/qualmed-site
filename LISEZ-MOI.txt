@@ -1,0 +1,67 @@
+QUALMED — SITE WEB COMPLET (code source)
+==========================================
+
+Ce dossier contient l'intégralité du site QualMed, prêt à être déployé.
+Le site est statique (HTML/CSS/JS) : aucun serveur ni base de données requis.
+
+-------------------------------------------------
+PAGES PRINCIPALES
+-------------------------------------------------
+index.html ................. Accueil (hero, 3 pôles, chiffres, méthode)
+a-propos.html .............. À propos / la dirigeante / notre approche
+medical-regulatory.html .... Pôle 1 : Médical & Réglementaire (+ EC REP)
+business-transformation.html Pôle 2 : Transformation des entreprises
+management-academy.html .... Pôle 3 : Systèmes de management & Académie
+secteurs.html .............. Secteurs accompagnés
+contact.html ............... Formulaire de contact (FormSubmit)
+merci.html ................. Page de remerciement après envoi du formulaire
+mentions-legales.html ...... Mentions légales
+404.html ................... Page d'erreur
+
+Pages de redirection (anciennes URL -> nouveaux pôles) :
+transformation.html, qualite-certifications.html,
+dispositifs-medicaux.html, audits-validation.html, management-qhse.html
+
+-------------------------------------------------
+RESSOURCES
+-------------------------------------------------
+styles.v17.css ............. Feuille de styles (unique)
+app.v17.js ................. Script (langue FR/EN, menu, FAQ, animations)
+logo.png / logo-white.png .. Logos
+ico-*.jpg .................. Icônes/illustrations des pôles
+bd-*.jpg ................... Bandeaux d'illustration
+illus-*.jpg/png ............ Illustrations (accueil, à propos, dashboard)
+
+-------------------------------------------------
+BILINGUE FR / EN
+-------------------------------------------------
+Le site bascule entre français et anglais via les boutons FR/EN.
+Chaque texte porte deux attributs : data-fr="..." et data-en="...".
+Le script app.v17.js applique la langue choisie.
+
+-------------------------------------------------
+FORMULAIRE DE CONTACT
+-------------------------------------------------
+Le formulaire (contact.html) envoie vers omokrani@qualmed.fr via FormSubmit.
+IMPORTANT : au premier envoi, FormSubmit envoie un mail d'activation à
+omokrani@qualmed.fr (vérifier les spams). Cliquer le lien d'activation une
+seule fois ; ensuite tous les messages arrivent automatiquement.
+
+-------------------------------------------------
+DÉPLOIEMENT SUR HOSTINGER
+-------------------------------------------------
+Option A (actuelle) — via GitHub :
+  Déposer tous ces fichiers dans le dépôt GitHub, puis déployer depuis hPanel
+  (section Git) sur le domaine qualmed.fr.
+
+Option B — upload direct :
+  Dans hPanel -> Gestionnaire de fichiers -> dossier public_html,
+  téléverser tous ces fichiers (ou l'archive .zip puis l'extraire).
+
+Le site s'affiche immédiatement : index.html est la page d'accueil.
+
+-------------------------------------------------
+APERÇU EN LOCAL (sur votre ordinateur)
+-------------------------------------------------
+Double-cliquer sur index.html : le site s'ouvre dans votre navigateur.
+(Le formulaire de contact ne fonctionne qu'en ligne, pas en local.)
