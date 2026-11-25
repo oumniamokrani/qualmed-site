@@ -521,11 +521,14 @@ section.block{padding:116px 0}
 .contact-social{justify-content:flex-start;margin-top:2px}
 
 /* v42 : signature hero (QUALITÉ · CONFORMITÉ…) plus grande et centrée horizontalement */
-.hero-tagline{display:block;width:100%;text-align:center;font-size:clamp(.95rem,1.9vw,1.45rem);letter-spacing:.22em;margin:0 auto 44px;color:var(--turq-light);line-height:1.5}
+.hero-tagline{display:block;width:100%;text-align:center;font-size:clamp(.95rem,1.9vw,1.45rem);letter-spacing:.22em;margin:0 auto 46px;color:var(--turq-light);line-height:1.5}
 .hero-tagline::before{display:none}
-@media(max-width:560px){.hero-tagline{font-size:.86rem;letter-spacing:.14em;margin-bottom:30px}}
+@media(max-width:560px){.hero-tagline{font-size:.86rem;letter-spacing:.14em;margin:0 auto 30px}}
+/* Eyebrows de section (accueil) : même taille que la signature hero, centrés, sans tiret */
+.home .section-head .eyebrow{font-size:clamp(.95rem,1.9vw,1.45rem);letter-spacing:.22em;justify-content:center}
+.home .section-head .eyebrow::before{display:none}
+@media(max-width:560px){.home .section-head .eyebrow{font-size:.86rem;letter-spacing:.14em}}
 
-/* v42 : plus d'espace en haut — hero + bannières des autres pages */
-.hero .wrap{padding-top:158px}
-.phero .wrap{padding-top:106px}
-@media(max-width:560px){.hero .wrap{padding-top:108px}.phero .wrap{padding-top:78px}}
+/* v42 : espace ~1cm au-dessus de la signature hero */
+.hero .wrap{padding-top:34px}
+@media(max-width:560px){.hero .wrap{padding-top:28px}}
